@@ -6,7 +6,11 @@ jobs:
         steps:
             - uses: actions/checkout@v2
             - shell: bash -l {0}
-              run: nvm install
+              run: |
+                  nvm install
+                  node -v
             - run: node -v
             - shell: bash -l {0}
-              run: node -v
+              run: |
+                  nvm use
+                  node -v
