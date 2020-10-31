@@ -12,5 +12,5 @@ jobs:
             - run: node -v
             - shell: bash -l {0}
               run: |
-                  nvm use
+                  nvm install
                   node -v
