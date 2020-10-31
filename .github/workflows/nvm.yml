@@ -1,0 +1,11 @@
+name: nvm
+on: push
+jobs:
+    nvm:
+        runs-on: ubuntu-latest
+        steps:
+            - shell: bash -l {0}
+              run: nvm install
+            - run: node -v
+            - shell: bash -l {0}
+              run: node -v
