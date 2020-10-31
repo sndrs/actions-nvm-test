@@ -4,6 +4,7 @@ jobs:
     nvm:
         runs-on: ubuntu-latest
         steps:
+            - uses: actions/checkout@v2
             - shell: bash -l {0}
               run: nvm install
             - run: node -v
