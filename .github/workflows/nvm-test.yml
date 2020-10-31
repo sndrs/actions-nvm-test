@@ -1,10 +1,10 @@
 name: Test NVM
 on: push
 jobs:
-  test:
+  install:
     runs-on: ubuntu-latest
     steps:
-      - name: Install with NVM
+      - name: Install Node with NVM
         shell: bash -l {0}
         run: nvm install
       - name: Get node version
